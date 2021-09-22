@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31710.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4.Tickets.WebApi", "P4.Tickets.WebApi\P4.Tickets.WebApi.csproj", "{70DAE334-DBAE-45D6-A362-836B7E865A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4.Tickets.WebApi.Contract", "P4.Tickets.WebApi.Contract\P4.Tickets.WebApi.Contract.csproj", "{5CA357F0-D07E-4295-A119-14811A85C979}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ExternalApi", "_ExternalApi", "{85D8225B-7EB9-426A-BF38-CC0F7F32767A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_TimeSaving", "_TimeSaving", "{9BC3420E-E409-4AD4-8F54-CBDAC4F4B71D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4.Tickets.Web.Client.Tests", "P4.Tickets.Web.Client.Tests\P4.Tickets.Web.Client.Tests.csproj", "{A4A45846-4DD4-4A7B-9494-9589023FDC3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70DAE334-DBAE-45D6-A362-836B7E865A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DAE334-DBAE-45D6-A362-836B7E865A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DAE334-DBAE-45D6-A362-836B7E865A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DAE334-DBAE-45D6-A362-836B7E865A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA357F0-D07E-4295-A119-14811A85C979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA357F0-D07E-4295-A119-14811A85C979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA357F0-D07E-4295-A119-14811A85C979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA357F0-D07E-4295-A119-14811A85C979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C9C2FBA-8D3F-41F4-9B1E-D557F7D24198}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70DAE334-DBAE-45D6-A362-836B7E865A95} = {85D8225B-7EB9-426A-BF38-CC0F7F32767A}
+		{5CA357F0-D07E-4295-A119-14811A85C979} = {85D8225B-7EB9-426A-BF38-CC0F7F32767A}
+		{A4A45846-4DD4-4A7B-9494-9589023FDC3C} = {9BC3420E-E409-4AD4-8F54-CBDAC4F4B71D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿@inherits TestContext
+
+@code {
+
+    [Fact]
+    public void PassTheTest()
+    {
+        Render(@<h1>Test</h1>)
+            .Should().HaveMarkup(@<h1>Test</h1>)
+            .And.HaveTag("h1")
+            .And.HaveChildMarkup("Test");
+    }
+}
