@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_TimeSaving", "_TimeSaving"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4.Tickets.Web.Client.Tests", "P4.Tickets.Web.Client.Tests\P4.Tickets.Web.Client.Tests.csproj", "{A4A45846-4DD4-4A7B-9494-9589023FDC3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4.Tickets.Web.Client", "P4.Tickets.Web.Client\P4.Tickets.Web.Client.csproj", "{CF6A0A71-7041-4205-9290-CB1441D34FB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A45846-4DD4-4A7B-9494-9589023FDC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6A0A71-7041-4205-9290-CB1441D34FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6A0A71-7041-4205-9290-CB1441D34FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6A0A71-7041-4205-9290-CB1441D34FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6A0A71-7041-4205-9290-CB1441D34FB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 		{70DAE334-DBAE-45D6-A362-836B7E865A95} = {85D8225B-7EB9-426A-BF38-CC0F7F32767A}
 		{5CA357F0-D07E-4295-A119-14811A85C979} = {85D8225B-7EB9-426A-BF38-CC0F7F32767A}
 		{A4A45846-4DD4-4A7B-9494-9589023FDC3C} = {9BC3420E-E409-4AD4-8F54-CBDAC4F4B71D}
+		{CF6A0A71-7041-4205-9290-CB1441D34FB8} = {9BC3420E-E409-4AD4-8F54-CBDAC4F4B71D}
 	EndGlobalSection
 EndGlobal
