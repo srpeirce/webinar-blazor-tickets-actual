@@ -1,0 +1,50 @@
+﻿@page "/shows/{showId}"
+<h3>@ShowId</h3>
+
+<EditForm Model="_basketItem" OnSubmit="Callback">
+    <label for="number-tickets">Number of tickets</label>
+    <InputSelect class="form-control" id="number-tickets" @bind-Value="_basketItem.NumberOfTickets" disabled="@HasSubmitted">
+        
+        @for (var i = 1; i <= 8; i++)
+        {
+            <option @key=i value="@i">@i (£@(i * _basketItem.Price))</option>
+        }
+    </InputSelect>
+    <button class="btn btn-primary" disabled="@HasSubmitted">Submit</button>
+</EditForm>
+
+@if (HasSubmitted)
+{
+    <p>Yay subnmitted</p>
+}
+
+<h1>Basket:</h1>
+@foreach (var item in BasketState.BasketItems)
+{
+    <p>@item.ShowId | @item.NumberOfTickets | @item.NumberOfTickets </p>
+}
+
+@code {
+    [Parameter]
+    public string ShowId { get; set; }
+    
+    [CascadingParameter]
+    public CascadingBasketState BasketState { get; set; }
+
+    private bool HasSubmitted;
+
+    private BasketItem _basketItem = new BasketItem();
+
+    protected override void OnInitialized()
+    {
+        _basketItem.ShowId = ShowId;
+    }
+
+    private void Callback()
+    {
+        HasSubmitted = true;
+        BasketState.AddToBasket(_basketItem);
+        
+    }
+
+}

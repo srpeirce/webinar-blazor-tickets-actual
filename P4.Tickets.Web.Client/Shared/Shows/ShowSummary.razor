@@ -1,0 +1,15 @@
+﻿@using P4.Tickets.WebApi.Contract
+<div class="card">
+  <img src="@Show.ImageUri" class="card-img-top" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">@Show.Name</h5>
+      <h6 class="card-subtitle mb-2 text-muted">@Show.PromotionName</h6>
+    <p class="card-text">@Show.Location</p>
+    <a href="/shows/{@Show.ShowId}" class="btn btn-primary">Buy Tickets</a>
+  </div>
+</div>
+
+@code {
+    [Parameter]
+    public ShowSummaryModel Show { get; set; }
+}

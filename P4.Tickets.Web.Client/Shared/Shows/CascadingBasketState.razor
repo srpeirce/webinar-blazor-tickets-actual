@@ -1,0 +1,17 @@
+﻿<CascadingValue Value="@this">
+    @ChildContent
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    
+    public List<BasketItem> BasketItems { get; set; } = new List<BasketItem>();
+
+    public void AddToBasket(BasketItem item)
+    {
+        BasketItems.Add(item);
+        StateHasChanged();
+    }
+
+}

@@ -1,9 +1,36 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@inject HttpClient _httpClient
+@inject ShowsViewModel _showsViewModel
 
-<h1>Hello, world!</h1>
+<PageTitle>P4 Tickets</PageTitle>
 
-Welcome to your new app.
+<h1>Upcoming Shows</h1>
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+@if (_showsViewModel.IsLoading)
+{
+    <span>Loading...</span>
+}
+else
+{
+    <div class="row">
+        @foreach (var show in _showsViewModel.Shows)
+        {
+            <div class="col-4">
+                <ShowSummary Show="@show"/>
+            </div>
+        }
+    </div>
+}
+
+
+@code {
+
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _showsViewModel.LoadShowsAsync();
+    }
+
+}

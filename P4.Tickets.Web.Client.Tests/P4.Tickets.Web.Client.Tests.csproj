@@ -21,4 +21,8 @@
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\P4.Tickets.Web.Client\P4.Tickets.Web.Client.csproj" />
+    </ItemGroup>
 </Project>

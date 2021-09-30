@@ -1,0 +1,7 @@
+﻿.card:hover {
+    box-shadow: 5px 5px 20px grey;
+}
+
+.card {
+    margin-bottom: 1rem;
+}

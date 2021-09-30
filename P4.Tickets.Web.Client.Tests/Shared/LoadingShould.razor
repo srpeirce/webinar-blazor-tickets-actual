@@ -1,0 +1,11 @@
+﻿@inherits TestContext
+
+@code {
+
+    [Fact]
+    public void ShowLoadingWhenIsLoading()
+    {
+        Render(@<Loading/>)
+            .Should().HaveMarkup(@<span>Loading...</span>);
+    }
+}
